@@ -1,3 +1,7 @@
+## 0.1.0+4
+
+- updated deps
+
 ## 0.1.0+3
 
 - Fix the dir is not exist when never use it.
