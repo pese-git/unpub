@@ -1,3 +1,7 @@
+## 2.0.1-dev.0
+
+- Updated deps
+
 ## 2.0.0
 
 - Supports NNBD
