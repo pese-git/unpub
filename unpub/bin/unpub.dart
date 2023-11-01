@@ -31,10 +31,10 @@ main(List<String> args) async {
   var baseDir = path.absolute('unpub-packages');
 
   var app = unpub.App(
-    metaStore: unpub.MongoStore(db),
-    packageStore: unpub.FileStore(baseDir),
-    proxy_origin: proxy_origin.trim().isEmpty ? null : Uri.parse(proxy_origin)
-  );
+      metaStore: unpub.MongoStore(db),
+      packageStore: unpub.FileStore(baseDir),
+      proxy_origin:
+          proxy_origin.trim().isEmpty ? null : Uri.parse(proxy_origin));
 
   var server = await app.serve(host, port);
   print('Serving at http://${server.address.host}:${server.port}');

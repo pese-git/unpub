@@ -9,14 +9,18 @@
             "cwd": "unpub",
             "request": "launch",
             "type": "dart",
-            "args": ["--database", "mongodb://localhost:27017/dart_pub"],
+            "args": [
+                "--database",
+                "mongodb://root:root@localhost:27017/dart_pub?authSource=admin&retryWrites=false"
+            ],
             "program": "bin/unpub.dart",
         },
         {
             "name": "unpub_aws",
             "cwd": "unpub_aws",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "program": "example/main.dart",
         },
         {
             "name": "unpub_web",
